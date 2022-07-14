@@ -12,8 +12,8 @@ export const useUserStore = defineStore('user', {
     }
   },
   actions: {
-    setCount(params){
-      this.count = ++params.value
+    setCount(count){
+      this.count = count
     }
   }
 })

@@ -7,7 +7,8 @@ defineProps({
 const userStore = useUserStore()
 const { count } = storeToRefs(userStore)
 const setCount = () =>{
-  userStore.setCount(count);
+  let a = count.value
+  userStore.setCount(++a);
 }
 </script>
 
